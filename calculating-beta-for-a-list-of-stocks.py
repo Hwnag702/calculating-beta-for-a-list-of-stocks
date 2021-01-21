@@ -70,7 +70,7 @@ for ticker in tickers:
     r_squared = r**2
     x_curve = np.linspace(np.amin(ohlc_index_new['Pct Change']), np.amax(ohlc_index_new['Pct Change']))
     y_curve = slope * x_curve + intercept
-    plt.plot(ohlc_index_new['Pct Change'], ohlc_new[ticker]['Pct Change'], 'b.', alpha = 0.2)
+    plt.plot(ohlc_index_new['Pct Change'], ohlc_new[ticker]['Pct Change'], 'r.', alpha = 0.2)
     plt.plot(x_curve, y_curve, 'k')
     plt.xlabel(index + ' Return')
     plt.ylabel(ticker + ' Return')
